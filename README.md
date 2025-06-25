@@ -1,4 +1,4 @@
-<a href="https://github.com/bezhansalleh/filament-shield" class="filament-hidden">
+<a href="https://github.com/abdelhamiderrahmouni/filament-shield" class="filament-hidden">
 <img style="width: 100%; max-width: 100%;" alt="filament-shield-art" src="https://user-images.githubusercontent.com/10007504/148662315-35d4bd74-fc1c-4f8c-8c02-689309b414b0.png" >
 </a>
 
@@ -6,18 +6,18 @@
     <a href="https://filamentadmin.com/docs/2.x/admin/installation">
         <img alt="FILAMENT 8.x" src="https://img.shields.io/badge/FILAMENT-3.x-EBB304?style=for-the-badge">
     </a>
-    <a href="https://packagist.org/packages/bezhansalleh/filament-shield">
-        <img alt="Packagist" src="https://img.shields.io/packagist/v/bezhansalleh/filament-shield.svg?style=for-the-badge&logo=packagist">
+    <a href="https://packagist.org/packages/abdelhamiderrahmouni/filament-shield">
+        <img alt="Packagist" src="https://img.shields.io/packagist/v/abdelhamiderrahmouni/filament-shield.svg?style=for-the-badge&logo=packagist">
     </a>
-    <a href="https://github.com/bezhansalleh/filament-shield/actions?query=workflow%3Arun-tests+branch%3A3.x">
-        <img alt="Tests Passing" src="https://img.shields.io/github/actions/workflow/status/bezhansalleh/filament-shield/run-tests.yml?style=for-the-badge&logo=github&label=tests" class="filament-hidden">
+    <a href="https://github.com/abdelhamiderrahmouni/filament-shield/actions?query=workflow%3Arun-tests+branch%3A3.x">
+        <img alt="Tests Passing" src="https://img.shields.io/github/actions/workflow/status/abdelhamiderrahmouni/filament-shield/run-tests.yml?style=for-the-badge&logo=github&label=tests" class="filament-hidden">
     </a>
-    <a href="https://github.com/bezhansalleh/filament-shield/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3A3.x" class="filament-hidden">
-        <img alt="Code Style Passing" src="https://img.shields.io/github/actions/workflow/status/bezhansalleh/filament-shield/laravel-pint.yml?style=for-the-badge&logo=github&label=code%20style">
+    <a href="https://github.com/abdelhamiderrahmouni/filament-shield/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3A3.x" class="filament-hidden">
+        <img alt="Code Style Passing" src="https://img.shields.io/github/actions/workflow/status/abdelhamiderrahmouni/filament-shield/laravel-pint.yml?style=for-the-badge&logo=github&label=code%20style">
     </a>
 
-<a href="https://packagist.org/packages/bezhansalleh/filament-shield">
-    <img alt="Downloads" src="https://img.shields.io/packagist/dt/bezhansalleh/filament-shield.svg?style=for-the-badge" >
+<a href="https://packagist.org/packages/abdelhamiderrahmouni/filament-shield">
+    <img alt="Downloads" src="https://img.shields.io/packagist/dt/abdelhamiderrahmouni/filament-shield.svg?style=for-the-badge" >
     </a>
 </p>
 
@@ -42,9 +42,9 @@ The easiest and most intuitive way to add access management to your Filament Pan
 
 | Package Version | Filament Version |
 |-----------------|------------------|
-| [2.x](https://github.com/bezhanSalleh/filament-shield/tree/2.x)             | 2.x              |
+| [2.x](https://github.com/abdelhamiderrahmouni/filament-shield/tree/2.x)             | 2.x              |
 | **3.x**            | **3.x**             |
-| [4.x](https://github.com/bezhanSalleh/filament-shield/tree/4.x)             | 4.x              |
+| [4.x](https://github.com/abdelhamiderrahmouni/filament-shield/tree/4.x)             | 4.x              |
 
 <div class="filament-hidden">
 <b>Table of Contents</b>
@@ -92,7 +92,7 @@ The easiest and most intuitive way to add access management to your Filament Pan
 
 ### 1. Install Package
 ```bash
-composer require bezhansalleh/filament-shield
+composer require abdelhamiderrahmouni/filament-shield
 ```
 
 ### 2. Configure Auth Provider
@@ -572,7 +572,7 @@ public function panel(Panel $panel): Panel
             ]);
 }
 ```
-<img width="1161" alt="Screenshot 2023-09-24 at 10 34 31 PM" src="https://github.com/bezhanSalleh/filament-shield/assets/10007504/be42bab2-72d1-4db0-8de4-8b8fba2d4e68">
+<img width="1161" alt="Screenshot 2023-09-24 at 10 34 31 PM" src="https://github.com/abdelhamiderrahmouni/filament-shield/assets/10007504/be42bab2-72d1-4db0-8de4-8b8fba2d4e68">
 
 ## Available Commands
 ### Prohibited Commands

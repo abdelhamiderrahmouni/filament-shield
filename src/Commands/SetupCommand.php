@@ -73,13 +73,13 @@ class SetupCommand extends Command
         if (! $this->option('minimal')) {
             if (confirm('Would you like to show some love by starring the repo?')) {
                 if (PHP_OS_FAMILY === 'Darwin') {
-                    exec('open https://github.com/bezhanSalleh/filament-shield');
+                    exec('open https://github.com/abdelhamiderrahmouni/filament-shield');
                 }
                 if (PHP_OS_FAMILY === 'Linux') {
-                    exec('xdg-open https://github.com/bezhanSalleh/filament-shield');
+                    exec('xdg-open https://github.com/abdelhamiderrahmouni/filament-shield');
                 }
                 if (PHP_OS_FAMILY === 'Windows') {
-                    exec('start https://github.com/bezhanSalleh/filament-shield');
+                    exec('start https://github.com/abdelhamiderrahmouni/filament-shield');
                 }
 
                 $this->components->info('Thank you!');
