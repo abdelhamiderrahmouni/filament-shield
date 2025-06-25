@@ -50,6 +50,7 @@ return [
     'resources' => 'Resources',
     'widgets' => 'Widgets',
     'pages' => 'Pages',
+    'panels' => 'Panels',
     'custom' => 'Custom Permissions',
 
     /*

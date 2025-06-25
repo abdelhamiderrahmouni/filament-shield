@@ -18,7 +18,11 @@ class EditRole extends EditRecord
     protected function getActions(): array
     {
         return [
-            Actions\DeleteAction::make(),
+            ...(
+            config('filament-shield.enable_role_deletions.single', false)
+                ? [Actions\DeleteAction::make()]
+                : []
+            ),
         ];
     }
 

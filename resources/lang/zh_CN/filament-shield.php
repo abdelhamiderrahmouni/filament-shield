@@ -47,6 +47,7 @@ return [
     'resources' => '资源',
     'widgets' => '小组件',
     'pages' => '页面',
+    'panels' => '面板',
     'custom' => '自定义',
 
     /*

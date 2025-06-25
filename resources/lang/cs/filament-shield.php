@@ -47,6 +47,7 @@ return [
     'resources' => 'Zdroje',
     'widgets' => 'Widgety',
     'pages' => 'Stránky',
+    'panels' => 'Panely',
     'custom' => 'Vlastní oprávnění',
 
     /*

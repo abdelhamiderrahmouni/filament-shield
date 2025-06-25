@@ -50,6 +50,7 @@ return [
     'resources' => 'Zasoby',
     'widgets' => 'Widgety',
     'pages' => 'Strony',
+    'panels' => 'Panele',
     'custom' => 'Własne uprawnienia',
 
     /*

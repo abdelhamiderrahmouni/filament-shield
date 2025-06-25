@@ -16,6 +16,14 @@ return [
 
     'tenant_model' => null,
 
+    'enable_role_deletions' => [
+        'single' => true,
+        'bulk' => true,
+    ],
+
+    'disable_name_update' => false,
+    'disable_guard_name_update' => false,
+
     'auth_provider_model' => [
         'fqcn' => 'App\\Models\\User',
     ],
@@ -56,6 +64,7 @@ return [
         'pages' => true,
         'widgets' => true,
         'resources' => true,
+        'panels' => true,
         'custom_permissions' => false,
     ],
 

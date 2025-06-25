@@ -47,6 +47,7 @@ return [
     'resources' => 'Resurse',
     'widgets' => 'Widget-uri',
     'pages' => 'Pagini',
+    'panels' => 'Panouri',
     'custom' => 'Permisiuni personalizate',
 
     /*

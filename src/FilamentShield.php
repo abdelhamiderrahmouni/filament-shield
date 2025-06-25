@@ -133,7 +133,7 @@ class FilamentShield
         if (Utils::discoverAllResources()) {
             $resources = [];
             foreach (Filament::getPanels() as $panel) {
-                $resources = array_merge($resources, $panel->getResources());
+                $resources = [...$resources, ...$panel->getResources()];
             }
             $resources = array_unique($resources);
         }
@@ -171,7 +171,7 @@ class FilamentShield
         if (Utils::discoverAllResources()) {
             $resources = [];
             foreach (Filament::getPanels() as $panel) {
-                $resources = array_merge($resources, $panel->getResources());
+                $resources = [...$resources, ...$panel->getResources()];
             }
             $resources = array_unique($resources);
         }
@@ -192,6 +192,36 @@ class FilamentShield
             : Str::of($permission)->headline();
     }
 
+    public static function getPanels(): ?array
+    {
+        $panels = Filament::getPanels();
+
+        return collect($panels)
+            ->mapWithKeys(function (\Filament\Panel $panel, $name) {
+                $permission = Str::of($name)
+                    ->prepend(
+                        Str::of((string) config('filament-shield.permission_prefixes.panel'))
+                            ->append('_')
+                            ->toString()
+                    )
+                    ->toString();
+
+                $class = Str::of($name)
+                    ->ucfirst()
+                    ->append('PanelProvider')
+                    ->prepend('App\Providers\Filament\\')->toString();
+
+                return [
+                    $permission => [
+                        'name' => Str::of($name)->ucfirst()->toString(),
+                        'class' => $class,
+                        'permission' => $permission,
+                    ],
+                ];
+            })
+            ->toArray();
+    }
+
     /**
      * Transform filament pages to key value pair for shield
      */
@@ -202,7 +232,7 @@ class FilamentShield
         if (Utils::discoverAllPages()) {
             $pages = [];
             foreach (Filament::getPanels() as $panel) {
-                $pages = array_merge($pages, $panel->getPages());
+                $pages = [...$pages, ...$panel->getPages()];
             }
             $pages = array_unique($pages);
         }
@@ -265,7 +295,7 @@ class FilamentShield
         if (Utils::discoverAllWidgets()) {
             $widgets = [];
             foreach (Filament::getPanels() as $panel) {
-                $widgets = array_merge($widgets, $panel->getWidgets());
+                $widgets = [...$widgets, ...$panel->getWidgets()];
             }
             $widgets = array_unique($widgets);
         }

@@ -22,6 +22,7 @@ trait HasShieldFormComponents
                 static::getTabFormComponentForResources(),
                 static::getTabFormComponentForPage(),
                 static::getTabFormComponentForWidget(),
+                static::getTabFormComponentForPanels(),
                 static::getTabFormComponentForCustomPermissions(),
             ])
             ->columnSpan('full');
@@ -32,7 +33,7 @@ trait HasShieldFormComponents
         return collect(FilamentShield::getResources())
             ->sortKeys()
             ->map(function ($entity) {
-                $sectionLabel = strval(
+                $sectionLabel = (string) (
                     static::shield()->hasLocalizedPermissionLabels()
                     ? FilamentShield::getLocalizedResourceLabel($entity['fqcn'])
                     : $entity['model']
@@ -90,6 +91,15 @@ trait HasShieldFormComponents
                 );
             }
         }
+    }
+
+    public static function getPanelOptions(): array
+    {
+        return collect(FilamentShield::getPanels())
+            ->flatMap(fn ($panel) => [
+                $panel['permission'] => __($panel['name']),
+            ])
+            ->toArray();
     }
 
     public static function getPageOptions(): array
@@ -180,6 +190,23 @@ trait HasShieldFormComponents
             ->schema([
                 static::getCheckboxListFormComponent(
                     name: 'widgets_tab',
+                    options: $options,
+                ),
+            ]);
+    }
+
+    public static function getTabFormComponentForPanels(): Component
+    {
+        $options = static::getPanelOptions();
+        $count = count($options);
+
+        return Forms\Components\Tabs\Tab::make('panels')
+            ->label(__('filament-shield::filament-shield.panels'))
+            ->visible(fn (): bool => (bool) config('filament-shield.entities.panels', true) && $count > 0)
+            ->badge($count)
+            ->schema([
+                static::getCheckboxListFormComponent(
+                    name: 'panels_tab',
                     options: $options,
                 ),
             ]);

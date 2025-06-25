@@ -47,6 +47,7 @@ return [
     'resources' => 'Burimet',
     'widgets' => 'Widgets',
     'pages' => 'Faqet',
+    'panels' => 'Panelet',
     'custom' => 'Lejet e personalizuara',
 
     /*

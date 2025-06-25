@@ -47,6 +47,7 @@ return [
     'resources' => '리소스',
     'widgets' => '위젯',
     'pages' => '페이지',
+    'panels' => '패널',
     'custom' => '사용자 정의 권한',
 
     /*

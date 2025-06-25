@@ -47,6 +47,7 @@ return [
     'resources' => '資源',
     'widgets' => '小工具',
     'pages' => '頁面',
+    'panels' => '面板',
     'custom' => '自訂',
 
     /*

@@ -47,6 +47,7 @@ return [
     'resources' => 'Resursi',
     'widgets' => 'Logrīki',
     'pages' => 'Lapas',
+    'panels' => 'Paneļi',
     'custom' => 'Speciālās tiesības',
 
     /*
