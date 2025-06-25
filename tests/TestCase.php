@@ -1,6 +1,6 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Tests;
+namespace AbdelhamidErrahmouni\FilamentShield\Tests;
 
 use BezhanSalleh\FilamentShield\FilamentShieldServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;

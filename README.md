@@ -148,7 +148,7 @@ php artisan shield:install admin
 Or instead of the above command you can register the plugin manually in your `xPanelProvider`:
 ```php
     ->plugins([
-        \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+        \AbdelhamidErrahmouni\FilamentShield\FilamentShieldPlugin::make(),
     ])
 ```
 4.2 **With Tenancy:**
@@ -160,10 +160,10 @@ Or instead of the above command you can register the plugin and enable tenancy m
 ```php
     ->tenant(YourTenantModel::class)
     ->tenantMiddleware([
-        \BezhanSalleh\FilamentShield\Middleware\SyncShieldTenant::class,
+        \AbdelhamidErrahmouni\FilamentShield\Middleware\SyncShieldTenant::class,
     ], isPersistent: true)
     ->plugins([
-        \BezhanSalleh\FilamentShield\FilamentShieldPlugin::make(),
+        \AbdelhamidErrahmouni\FilamentShield\FilamentShieldPlugin::make(),
     ])
 ```
 This command will:
@@ -221,9 +221,9 @@ Consider you have a `PostResource` and you want a couple of the predefined permi
 ```php
 <?php
 
-namespace BezhanSalleh\FilamentShield\Resources;
+namespace AbdelhamidErrahmouni\FilamentShield\Resources;
 
-use BezhanSalleh\FilamentShield\Contracts\HasShieldPermissions;
+use AbdelhamidErrahmouni\FilamentShield\Contracts\HasShieldPermissions;
 ...
 
 class PostResource extends Resource implements HasShieldPermissions
@@ -310,7 +310,7 @@ If you wish to change the default behaviour, then you can call the static `confi
 For example, if you wish to use the model name as the permission identifier, you can do it like so:
 
 ```php
-use BezhanSalleh\FilamentShield\Facades\FilamentShield;
+use AbdelhamidErrahmouni\FilamentShield\Facades\FilamentShield;
 
 FilamentShield::configurePermissionIdentifierUsing(
     fn($resource) => str($resource::getModel())
@@ -345,7 +345,7 @@ If you have generated permissions for `Pages` you can toggle the page's navigati
 namespace App\Filament\Pages;
 
 use ...;
-use BezhanSalleh\FilamentShield\Traits\HasPageShield;
+use AbdelhamidErrahmouni\FilamentShield\Traits\HasPageShield;
 
 class MyPage extends Page
 {
@@ -366,7 +366,7 @@ However if you need to perform some methods before and after the booted method y
 namespace App\Filament\Pages;
 
 use ...;
-use BezhanSalleh\FilamentShield\Traits\HasPageShield;
+use AbdelhamidErrahmouni\FilamentShield\Traits\HasPageShield;
 
 class MyPage extends Page
 {
@@ -401,7 +401,7 @@ class MyPage extends Page
 namespace App\Filament\Pages;
 
 use ...;
-use BezhanSalleh\FilamentShield\Traits\HasPageShield;
+use AbdelhamidErrahmouni\FilamentShield\Traits\HasPageShield;
 
 class MyPage extends Page
 {
@@ -423,7 +423,7 @@ if you have generated permissions for `Widgets` you can toggle their state based
 namespace App\Filament\Widgets;
 
 use ...;
-use BezhanSalleh\FilamentShield\Traits\HasWidgetShield;
+use AbdelhamidErrahmouni\FilamentShield\Traits\HasWidgetShield;
 
 class IncomeWidget extends LineChartWidget
 {
@@ -545,7 +545,7 @@ You can find out more about these components in the [Filament Docs](https://fila
 #### Layout Customization
 You can easily customize the `Grid`, `Section` and `CheckboxList`'s `columns()` and `columnSpan()` without publishing the resource.
 ```php
-use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
+use AbdelhamidErrahmouni\FilamentShield\FilamentShieldPlugin;
 
 public function panel(Panel $panel): Panel
 {
@@ -578,8 +578,8 @@ public function panel(Panel $panel): Panel
 ### Prohibited Commands
 Since almost all shield commands are destructive and can cause data loss, they can be prohibited by calling the prohibit method of the command as following in a service provider's `boot()` method:
 ```php
-use BezhanSalleh\FilamentShield\FilamentShield;
-use BezhanSalleh\FilamentShield\Commands;
+use AbdelhamidErrahmouni\FilamentShield\FilamentShield;
+use AbdelhamidErrahmouni\FilamentShield\Commands;
     public function boot(): void
     {
         // individually prohibit commands
@@ -655,7 +655,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Bezhan Salleh](https://github.com/bezhanSalleh)
+- [Bezhan Salleh](https://github.com/abdelhamiderrahmouni)
 - [All Contributors](../../contributors)
 
 ## License

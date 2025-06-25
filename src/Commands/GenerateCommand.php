@@ -1,9 +1,9 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Commands;
+namespace AbdelhamidErrahmouni\FilamentShield\Commands;
 
-use BezhanSalleh\FilamentShield\Facades\FilamentShield;
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Facades\FilamentShield;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Filament\Facades\Filament;
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;

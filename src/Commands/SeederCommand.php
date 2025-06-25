@@ -1,8 +1,8 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Commands;
+namespace AbdelhamidErrahmouni\FilamentShield\Commands;
 
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Attribute\AsCommand;
 

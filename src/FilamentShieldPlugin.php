@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BezhanSalleh\FilamentShield;
+namespace AbdelhamidErrahmouni\FilamentShield;
 
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\Support\Concerns\EvaluatesClosures;

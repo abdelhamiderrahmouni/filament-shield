@@ -2,7 +2,7 @@
     "name": "abdelhamiderrahmouni/filament-shield",
     "description": "Filament support for `spatie/laravel-permission`.",
     "keywords": [
-        "bezhanSalleh",
+        "AbdelhamidErrahmouni",
         "laravel",
         "filament",
         "filament-shield",
@@ -43,13 +43,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BezhanSalleh\\FilamentShield\\": "src",
-            "BezhanSalleh\\FilamentShield\\Database\\Factories\\": "database/factories"
+            "AbdelhamidErrahmouni\\FilamentShield\\": "src",
+            "AbdelhamidErrahmouni\\FilamentShield\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BezhanSalleh\\FilamentShield\\Tests\\": "tests"
+            "AbdelhamidErrahmouni\\FilamentShield\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -69,10 +69,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BezhanSalleh\\FilamentShield\\FilamentShieldServiceProvider"
+                "AbdelhamidErrahmouni\\FilamentShield\\FilamentShieldServiceProvider"
             ],
             "aliases": {
-                "FilamentShield": "BezhanSalleh\\FilamentShield\\Facades\\FilamentShield"
+                "FilamentShield": "AbdelhamidErrahmouni\\FilamentShield\\Facades\\FilamentShield"
             }
         }
     },

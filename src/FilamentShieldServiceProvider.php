@@ -1,8 +1,8 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield;
+namespace AbdelhamidErrahmouni\FilamentShield;
 
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Illuminate\Support\Facades\Gate;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
