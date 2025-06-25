@@ -1,8 +1,8 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Commands\Concerns;
+namespace AbdelhamidErrahmouni\FilamentShield\Commands\Concerns;
 
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Illuminate\Support\Str;
 
 trait CanGeneratePolicy

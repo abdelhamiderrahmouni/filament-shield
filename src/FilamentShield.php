@@ -1,8 +1,8 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield;
+namespace AbdelhamidErrahmouni\FilamentShield;
 
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Closure;
 use Filament\Facades\Filament;
 use Filament\Support\Concerns\EvaluatesClosures;

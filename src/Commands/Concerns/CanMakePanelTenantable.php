@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace BezhanSalleh\FilamentShield\Commands\Concerns;
+namespace AbdelhamidErrahmouni\FilamentShield\Commands\Concerns;
 
-use BezhanSalleh\FilamentShield\Stringer;
+use AbdelhamidErrahmouni\FilamentShield\Stringer;
 use Filament\Panel;
 
 trait CanMakePanelTenantable
@@ -33,7 +33,7 @@ trait CanMakePanelTenantable
         $stringer = Stringer::for($panelPath);
 
         $target = $stringer->contains('->plugins([') ? '->plugins([' : '->middleware([';
-        $shieldMiddlewareImportStatement = 'use BezhanSalleh\FilamentShield\Middleware\SyncShieldTenant;';
+        $shieldMiddlewareImportStatement = 'use AbdelhamidErrahmouni\FilamentShield\Middleware\SyncShieldTenant;';
         $shieldMiddleware = 'SyncShieldTenant::class,';
         $tenantMiddlewareMarker = '->tenantMiddleware([';
 

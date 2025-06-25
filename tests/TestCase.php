@@ -1,8 +1,8 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Tests;
+namespace AbdelhamidErrahmouni\FilamentShield\Tests;
 
-use BezhanSalleh\FilamentShield\FilamentShieldServiceProvider;
+use AbdelhamidErrahmouni\FilamentShield\FilamentShieldServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;

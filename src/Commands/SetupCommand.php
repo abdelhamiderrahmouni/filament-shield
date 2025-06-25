@@ -1,9 +1,9 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Commands;
+namespace AbdelhamidErrahmouni\FilamentShield\Commands;
 
-use BezhanSalleh\FilamentShield\Stringer;
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Stringer;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;

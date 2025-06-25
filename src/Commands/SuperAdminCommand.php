@@ -1,9 +1,9 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Commands;
+namespace AbdelhamidErrahmouni\FilamentShield\Commands;
 
-use BezhanSalleh\FilamentShield\FilamentShield;
-use BezhanSalleh\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\FilamentShield;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
 use Filament\Facades\Filament;
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Console\Command;

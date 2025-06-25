@@ -1,11 +1,11 @@
 <?php
 
-namespace BezhanSalleh\FilamentShield\Resources;
+namespace AbdelhamidErrahmouni\FilamentShield\Resources;
 
-use BezhanSalleh\FilamentShield\Forms\ShieldSelectAllToggle;
-use BezhanSalleh\FilamentShield\Resources\RoleResource\Pages;
-use BezhanSalleh\FilamentShield\Support\Utils;
-use BezhanSalleh\FilamentShield\Traits\HasShieldFormComponents;
+use AbdelhamidErrahmouni\FilamentShield\Forms\ShieldSelectAllToggle;
+use AbdelhamidErrahmouni\FilamentShield\Resources\RoleResource\Pages;
+use AbdelhamidErrahmouni\FilamentShield\Support\Utils;
+use AbdelhamidErrahmouni\FilamentShield\Traits\HasShieldFormComponents;
 use Filament\Facades\Filament;
 use Filament\Forms;
 use Filament\Forms\Form;
