@@ -19,7 +19,7 @@ class EditRole extends EditRecord
     {
         return [
             ...(
-            config('filament-shield.enable_role_deletions.single', false)
+                config('filament-shield.enable_role_deletions.single', false)
                 ? [Actions\DeleteAction::make()]
                 : []
             ),
