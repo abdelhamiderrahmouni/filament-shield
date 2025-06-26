@@ -56,6 +56,7 @@ return [
             'force_delete_any',
         ],
 
+        'panel' => 'panel',
         'page' => 'page',
         'widget' => 'widget',
     ],
